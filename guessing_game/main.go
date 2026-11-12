@@ -10,7 +10,7 @@ import (
 )
 
 const (
-	maxNumber = 100
+	maxNumber   = 100
 	maxAttempts = 7
 )
 
