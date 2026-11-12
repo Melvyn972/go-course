@@ -1,9 +1,11 @@
 package main
 
-import "fmt"
+// anonymous empty struct
+empty := struct{}{}
+
+// named empty struct type
+type emptyStruct {}
+namedEmpty := emptyStruct{}
 
 func main() {
-	for i, c := range "go" {
-		fmt.Println(i, c)
-	}
 }
