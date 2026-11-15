@@ -10,7 +10,7 @@ type Membership struct {
 	MessageCharLimit int
 }
 
-func newUser(name string, memberShipType string) User {
+func NewUser(name string, memberShipType string) User {
 	membership := Membership{Type: memberShipType}
 	if memberShipType == "premium" {
 		membership.MessageCharLimit = 1000

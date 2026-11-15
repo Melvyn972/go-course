@@ -93,23 +93,20 @@ func totalPlayTime(items []Audio) int {
 //	🎵 "Everlong" by Foo Fighters (4:10)
 //	Total play time: 52:27
 
-func playlistDemo() {
-	playlist := []Audio{
-		Song{Title: "Numb", Artist: "Linkin Park", Secs: 187},
-		Podcast{Title: "The Go Time Podcast", Episode: 12, Secs: 2710},
-		Song{Title: "Everlong", Artist: "Foo Fighters", Secs: 250},
-	}
-	for _, item := range playlist {
-		fmt.Println(item)
-	}
-	fmt.Println("Total play time:", mmss(totalPlayTime(playlist)))
-}
+// func playlistDemo() {
+// 	playlist := []Audio{
+// 		Song{Title: "Numb", Artist: "Linkin Park", Secs: 187},
+// 		Podcast{Title: "The Go Time Podcast", Episode: 12, Secs: 2710},
+// 		Song{Title: "Everlong", Artist: "Foo Fighters", Secs: 250},
+// 	}
+// 	for _, item := range playlist {
+// 		fmt.Println(item)
+// 	}
+// 	fmt.Println("Total play time:", mmss(totalPlayTime(playlist)))
+// }
 
 // mmss formats seconds as "m:ss", e.g. 187 -> "3:07".
 func mmss(secs int) string {
 	return fmt.Sprintf("%d:%02d", secs/60, secs%60)
 }
 
-func main() {
-	playlistDemo()
-}

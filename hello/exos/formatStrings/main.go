@@ -10,4 +10,3 @@ func main() {
 
 	fmt.Print(msg)
 }
-
