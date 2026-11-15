@@ -1,10 +1,9 @@
 package main
 
-import (
-	"fmt"
-	"math/rand"
-)
+import "fmt"
 
 func main() {
-	fmt.Println("My favorite number is", rand.Intn(10))
+	for i := range 5 {
+		fmt.Println(i)
+	}
 }
