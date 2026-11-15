@@ -1,12 +1,10 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"math/rand"
+)
 
 func main() {
-	messages := make(chan string)
-
-	go func(){ messages <- "ping" }()
-
-	msg := <-messages
-	fmt.Println(msg)
+	fmt.Println("My favorite number is", rand.Intn(10))
 }
