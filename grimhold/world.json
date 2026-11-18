@@ -1,0 +1,69 @@
+{
+  "start": "crossroads",
+  "regions": [
+    {
+      "id": "crossroads",
+      "name": "Le Hall",
+      "description": "Le tronc est fendu sur les dalles. Des bancs retournés laissent passer des rats.",
+      "danger": 1,
+      "foes": ["giant-rat", "swarm-of-rats", "owl"],
+      "exits": ["black-lake", "forbidden-edge", "hospital-wing", "trophy-room"]
+    },
+    {
+      "id": "black-lake",
+      "name": "La vanne",
+      "description": "L'eau monte par une vanne coincée. Un siphon au fond tire vers le bas.",
+      "danger": 2,
+      "foes": ["reef-shark", "giant-octopus"],
+      "exits": ["crossroads", "chamber"]
+    },
+    {
+      "id": "chamber",
+      "name": "La Chambre",
+      "description": "Un os plus long que la pièce gît au milieu, le crâne tourné vers l'échelle. L'eau du lac tombe encore du bec de la statue.",
+      "danger": 2,
+      "foes": ["poisonous-snake", "giant-poisonous-snake", "swarm-of-poisonous-snakes"],
+      "exits": ["black-lake"]
+    },
+    {
+      "id": "forbidden-edge",
+      "name": "La lisière",
+      "description": "Les dalles s'arrêtent là où les racines les ont soulevées. Des toiles pendent entre les fenêtres, de ce côté-ci du mur seulement.",
+      "danger": 2,
+      "foes": ["wolf", "giant-wolf-spider", "giant-spider"],
+      "exits": ["crossroads", "pres-au-lard"]
+    },
+    {
+      "id": "pres-au-lard",
+      "name": "Prés-au-Lard",
+      "description": "Les vitrines sont cassées, le sucre a fondu puis séché en plaques. Au bout de la rue, le vent passe dans le bois fendu de la cabane.",
+      "danger": 1,
+      "foes": ["wolf", "swarm-of-insects", "giant-rat"],
+      "exits": ["forbidden-edge"]
+    },
+    {
+      "id": "hospital-wing",
+      "name": "L'infirmerie",
+      "description": "Les draps sont gelés. Une bassine d'eau propre est prise en glace.",
+      "danger": 2,
+      "foes": ["shadow", "specter", "ghoul"],
+      "exits": ["crossroads"]
+    },
+    {
+      "id": "trophy-room",
+      "name": "La salle des trophées",
+      "description": "Les vitrines sont brisées et les coupes sont au sol. Une armure reste sur son socle, et une vitrine est trop profonde pour le trophée qu'elle annonce.",
+      "danger": 2,
+      "foes": ["flying-sword", "animated-armor", "mimic", "rug-of-smothering"],
+      "exits": ["crossroads", "iron-vault"]
+    },
+    {
+      "id": "iron-vault",
+      "name": "Le caveau",
+      "description": "La porte de fer est tordue, trop basse pour ce qu'il y a derrière. Le sol est couvert de givre.",
+      "danger": 4,
+      "foes": ["white-dragon-wyrmling"],
+      "exits": ["trophy-room"]
+    }
+  ]
+}
